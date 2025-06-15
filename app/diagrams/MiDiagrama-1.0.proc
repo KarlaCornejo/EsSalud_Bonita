@@ -34,7 +34,13 @@
       </searchIndexes>
     </elements>
     <elements xmi:type="process:Pool" xmi:id="_FUF_EEmEEfCY662XekDLLQ" name="Consultar Vigencia de Seguro">
-      <elements xmi:type="process:Lane" xmi:id="_F_JHMEmEEfCY662XekDLLQ" name="Asegurado"/>
+      <elements xmi:type="process:Lane" xmi:id="_F_JHMEmEEfCY662XekDLLQ" name="Asegurado">
+        <elements xmi:type="process:StartEvent" xmi:id="_26cxQEmJEfCNAJFWipLHNg" name="Inicio">
+          <dynamicLabel xmi:type="expression:Expression" xmi:id="_26d_YUmJEfCNAJFWipLHNg" name="" content="" returnTypeFixed="true"/>
+          <dynamicDescription xmi:type="expression:Expression" xmi:id="_26d_YEmJEfCNAJFWipLHNg" name="" content="" returnTypeFixed="true"/>
+          <stepSummary xmi:type="expression:Expression" xmi:id="_26d_YkmJEfCNAJFWipLHNg" name="" content="" returnTypeFixed="true"/>
+        </elements>
+      </elements>
       <elements xmi:type="process:Lane" xmi:id="_8_HbsEmEEfCY662XekDLLQ" name="EsSalud"/>
       <formMapping xmi:type="process:FormMapping" xmi:id="_FUGmL0mEEfCY662XekDLLQ">
         <targetForm xmi:type="expression:Expression" xmi:id="_FUGmMEmEEfCY662XekDLLQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -139,7 +145,14 @@
       <children xmi:type="notation:DecorationNode" xmi:id="_FUHNNkmEEfCY662XekDLLQ" type="7001">
         <children xmi:type="notation:Node" xmi:id="_F_JuQEmEEfCY662XekDLLQ" type="3007" element="_F_JHMEmEEfCY662XekDLLQ">
           <children xmi:type="notation:DecorationNode" xmi:id="_F_JuRUmEEfCY662XekDLLQ" type="5007"/>
-          <children xmi:type="notation:DecorationNode" xmi:id="_F_JuRkmEEfCY662XekDLLQ" type="7002"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_F_JuRkmEEfCY662XekDLLQ" type="7002">
+            <children xmi:type="notation:Shape" xmi:id="_26fNgEmJEfCNAJFWipLHNg" type="3002" element="_26cxQEmJEfCNAJFWipLHNg" fontName="Segoe UI">
+              <children xmi:type="notation:DecorationNode" xmi:id="_26fNgkmJEfCNAJFWipLHNg" type="5024">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_26fNg0mJEfCNAJFWipLHNg" y="5"/>
+              </children>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_26fNgUmJEfCNAJFWipLHNg" x="61" y="115"/>
+            </children>
+          </children>
           <styles xmi:type="notation:DescriptionStyle" xmi:id="_F_JuQUmEEfCY662XekDLLQ"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_F_JuQkmEEfCY662XekDLLQ" fontName="Segoe UI"/>
           <styles xmi:type="notation:LineStyle" xmi:id="_F_JuQ0mEEfCY662XekDLLQ"/>
