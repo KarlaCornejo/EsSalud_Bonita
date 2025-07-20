@@ -553,9 +553,6 @@
       <displayName>Member</displayName>
       <description></description>
     </role>
-    <role name="autoservicio">
-      <displayName>Autoservicio</displayName>
-    </role>
   </roles>
   <groups>
     <group name="acme">
@@ -614,7 +611,7 @@
   <memberships>
     <membership>
       <userName>william.jobs</userName>
-      <roleName>autoservicio</roleName>
+      <roleName>member</roleName>
       <groupName>acme</groupName>
     </membership>
     <membership>
