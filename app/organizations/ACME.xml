@@ -553,6 +553,12 @@
       <displayName>Member</displayName>
       <description></description>
     </role>
+    <role name="Hospital">
+      <displayName>Hospital</displayName>
+    </role>
+    <role name="Rol1">
+      <displayName>Paciente</displayName>
+    </role>
   </roles>
   <groups>
     <group name="acme">
@@ -622,7 +628,7 @@
     </membership>
     <membership>
       <userName>helen.kelly</userName>
-      <roleName>member</roleName>
+      <roleName>Hospital</roleName>
       <groupName>hr</groupName>
       <groupParentPath>/acme</groupParentPath>
     </membership>
