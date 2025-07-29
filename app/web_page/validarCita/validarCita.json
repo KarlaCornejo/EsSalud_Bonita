@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "f004bce8-e91b-4345-9890-24fb2a35a394",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1753816914382,
+  "lastUpdate" : 1753829492980,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -246,7 +246,7 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "{{cita.dni}}"
+                          "value" : "{{context.citaInput.dni}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -307,7 +307,7 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "{{cita.nombre}}"
+                          "value" : "{{context.citaInput.nombre}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -368,7 +368,7 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "{{cita.apellidoPaterno}}"
+                          "value" : "{{context.citaInput.apellidoPaterno}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -429,7 +429,7 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "{{cita.apellidoMaterno}}"
+                          "value" : "{{context.citaInput.apellidoMaterno}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -490,7 +490,7 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "{{cita.especialidad}}"
+                          "value" : "{{context.citaInput.especialidad}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -551,7 +551,7 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "{{cita.telefono}}"
+                          "value" : "{{context.citaInput.telefono}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -612,7 +612,7 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "{{cita.correo}}"
+                          "value" : "{{context.citaInput.correo}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -673,7 +673,7 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "{{cita.fecha|uiDate}}"
+                          "value" : "{{context.citaInput.fecha}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -838,21 +838,22 @@
                   },
                   "action" : {
                     "type" : "constant",
-                    "value" : "Submit task"
+                    "value" : "POST"
                   },
                   "assign" : {
                     "type" : "constant",
                     "value" : false
                   },
                   "url" : {
-                    "type" : "interpolation"
+                    "type" : "interpolation",
+                    "value" : "http://localhost:8070/api/citas"
                   },
                   "responseStatusCode" : {
                     "type" : "variable"
                   },
                   "dataToSend" : {
-                    "type" : "constant",
-                    "value" : "{\"citaInput\":{\"aprobado\":true}}"
+                    "type" : "expression",
+                    "value" : "formOutput"
                   },
                   "dataFromSuccess" : {
                     "type" : "variable",
@@ -976,14 +977,17 @@
     "formOutput" : {
       "type" : "expression",
       "value" : [
-        "if( $data.cita ){",
-        "\treturn {",
-        "\t\t//map cita variable to expected task contract input",
-        "\t\tcitaInput: {",
-        "\t\t\taprobado: $data.cita.aprobado !== undefined ? $data.cita.aprobado : null",
-        "\t\t}",
-        "\t}",
-        "}"
+        "return {\r",
+        "  dni: $data.cita.dni,\r",
+        "  nombre: $data.cita.nombre,\r",
+        "  apellidoPaterno: $data.cita.apellidoPaterno,\r",
+        "  apellidoMaterno: $data.cita.apellidoMaterno,\r",
+        "  especialidad: $data.cita.especialidad,\r",
+        "  telefono: $data.cita.telefono,\r",
+        "  correo: $data.cita.correo,\r",
+        "  fecha: $data.cita.fecha,\r",
+        "  aprobado: true\r",
+        "};\r"
       ],
       "exposed" : false
     },
