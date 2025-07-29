@@ -159,7 +159,7 @@
       <actors xmi:type="process:Actor" xmi:id="_UlpLwGydEfCUv_IbScg-Yw" name="hospital"/>
       <contract xmi:type="process:Contract" xmi:id="_KjXsfGyREfCUv_IbScg-Yw">
         <inputs xmi:type="process:ContractInput" xmi:id="_klbfsGyREfCUv_IbScg-Yw" name="citaInput" type="COMPLEX" dataReference="cita">
-          <inputs xmi:type="process:ContractInput" xmi:id="_klbfsWyREfCUv_IbScg-Yw" name="dni" type="LONG"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_klbfsWyREfCUv_IbScg-Yw" name="dni"/>
           <inputs xmi:type="process:ContractInput" xmi:id="_klbfsmyREfCUv_IbScg-Yw" name="nombre"/>
           <inputs xmi:type="process:ContractInput" xmi:id="_klbfs2yREfCUv_IbScg-Yw" name="apellidoPaterno"/>
           <inputs xmi:type="process:ContractInput" xmi:id="_klbftGyREfCUv_IbScg-Yw" name="apellidoMaterno"/>
