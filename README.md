@@ -8,6 +8,7 @@ Modelado, automatización y documentación de procesos de negocio utilizando la 
 
 - Lizardo Manuel Castillo Llaza
 - Karla Veronica Cornejo Pari
+- Jose Alejandro Machaca Muniz
 
 ---
 
