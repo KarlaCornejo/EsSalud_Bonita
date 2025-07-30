@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "f004bce8-e91b-4345-9890-24fb2a35a394",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1753829492980,
+  "lastUpdate" : 1753839967411,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -246,7 +246,7 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "{{context.citaInput.dni}}"
+                          "value" : "{{cita.dni}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -307,7 +307,7 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "{{context.citaInput.nombre}}"
+                          "value" : "{{cita.nombre}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -368,7 +368,7 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "{{context.citaInput.apellidoPaterno}}"
+                          "value" : "{{cita.apellidoPaterno}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -429,7 +429,7 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "{{context.citaInput.apellidoMaterno}}"
+                          "value" : "{{cita.apellidoMaterno}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -490,7 +490,7 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "{{context.citaInput.especialidad}}"
+                          "value" : "{{cita.especialidad}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -551,7 +551,7 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "{{context.citaInput.telefono}}"
+                          "value" : "{{cita.telefono}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -612,7 +612,7 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "{{context.citaInput.correo}}"
+                          "value" : "{{cita.correo}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -673,7 +673,7 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "{{context.citaInput.fecha}}"
+                          "value" : "{{cita.fecha}}"
                         },
                         "alignment" : {
                           "type" : "constant",
